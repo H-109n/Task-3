@@ -1,0 +1,25 @@
+#Used input function to store users completion time in minutes as swimming_time, cycling_time and running_time
+#Used int function to convert values that the users inputs into an integer number
+#Used arithmetic operator addition to calculate users input for swimming, cycling and running and stored as total_time
+#Used if, elif statement to execute suitable award, skipped else statement as all possible conditions is covered
+#Used logical operator 'and' so both conditions are met to execute message 
+#Used comparison operators to compare values
+
+swimming_time = int(input(" Please enter the amount of minutes taken to complete swimming: "))
+cycling_time = int(input(" Please enter the amount of minutes taken to complete cycling: "))
+running_time = int(input(" Please enter the amount of minutes taken to complete running: "))
+
+total_time=swimming_time+cycling_time+running_time
+
+
+if(total_time <=100):
+  print(" Congratulations! you have been awarded provincial colours ")
+
+elif(total_time >=101) and ( total_time <= 105):
+   print(" Congratulations! you have been awarded provincial half colours ")
+
+elif(total_time >= 106) and (total_time <=110):
+   print(" Congratulations! you have been awarded provincial scroll ")
+
+elif(total_time >= 111):
+   print(" No award, sorry ")
